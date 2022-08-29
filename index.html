@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- my style -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="header">
+    <h2>MEAL DB</h2>
+    <h2>MENU</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 ">
+      <div class="input-group">
+        <label for="search">Search:</label>
+        <input type="text" id="input" class="form-control" placeholder="Search meals..." aria-label="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Search</button>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="carousel-wrapper">
+    <div class="text pt-5">
+      <h3>LATEST MEAL</h3>
+    </div>
+    <div class="carousel">
+      <div class="loader loader-main1">
+        <div class="body text-white">
+          <i class="fa-solid fa-spinner fa-4x fa-spin"></i>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme" id="owl-carousel"></div>
+    </div>
+  </div>
+
+  <div class="filter">
+    <div class="col-lg-3">
+      <label for="categories">Categories:</label>
+      <select name="" id="categories" class="form-select" aria-placeholder="Categories">
+        <option value="0">Select Categories</option>
+      </select>
+    </div>
+    <div class="col-lg-3">
+      <label for="area">Areas:</label>
+      <select name="" id="areas" class="form-select" aria-placeholder="Area">
+        <option value="0">Select area</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container-wrapper">
+    <div class="text2">
+      <h3 class="h3">OUR MEAL</h3>
+    </div>
+    <div class="container-main">
+      <div class="loader loader-main2">
+        <div class="body text-white">
+          <i class="fa-solid fa-spinner fa-4x fa-spin"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" id="row"></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/index.js" type="module"></script>
+
+</body>
+
+</html>

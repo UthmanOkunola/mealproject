@@ -1,0 +1,287 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-weight: 20rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: aliceblue;
+  padding: 0 3rem;
+  align-items: center;
+}
+
+.header h2 {
+  color: chartreuse;
+}
+
+.input-group {
+  padding: 1rem;
+}
+
+.carousel-wrapper {
+  width: 95%;
+  position: relative;
+  margin: auto;
+}
+
+.text h3 {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.owl-carousel .owl-nav {
+  overflow: hidden;
+}
+
+.owl-carousel .nav-button {
+  height: 50px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+.owl-carousel .owl-prev {
+  left: -35px;
+  text-align: center;
+}
+
+.owl-carousel .owl-next {
+  right: -35px;
+  text-align: center;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #ffffff;
+  font-size: 39px;
+  background: #000000;
+  border-radius: 3px;
+}
+
+.item .imgbx {
+  height: 300px;
+}
+
+.item a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.filter {
+  display: flex;
+  margin-top: 60px;
+}
+
+.filter .col-lg-3 {
+  margin: 10px;
+}
+
+.text2 h3 {
+  text-align: center;
+  margin-top: 40PX;
+}
+
+
+#row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.show {
+  display: block;
+}
+
+.col-lg-3 {
+  display: flex;
+}
+
+label {
+  margin-top: 7px;
+  margin-right: 5px;
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.row .col {
+  height: 100%;
+}
+
+.col .imgbx {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 90vh;
+}
+
+.carousel {
+  position: relative;
+}
+
+.loader-main1 {
+  position: relative !important;
+  height: 30vh !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.loader-main2 {
+  position: relative !important;
+  height: 30vh !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.fa-spin {
+  color: aquamarine !important;
+}
+
+
+.container .container_head .imgbx {
+  height: 87%;
+  position: relative;
+  width: 90%;
+  right: -5rem;
+  top: 10px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 10%) 0px 25px 40px;
+
+}
+
+.container .container_head .imgbx img {
+  object-fit: contain;
+  position: relative;
+  height: 500px;
+}
+
+.imgbx .card-img-top {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  color: darkslateblue !important;
+  margin-top: 30px !important;
+}
+
+
+.container .container_body .description {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+
+.container .container_body .description .p {
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-top: 2rem;
+}
+
+.container_body h1 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+#p {
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-top: 20px;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+}
+
+.loader .body {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: contents;
+    justify-content: space-between;
+    position: relative;
+    height: 90vh;
+  }
+
+  .container .container_head .imgbx {
+    height: 87%;
+    position: absolute;
+    width: 90%;
+    left: 1rem;
+    top: 7rem;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 10%) 0px 25px 40px;
+
+  }
+
+  .container .container_body {
+    position: relative;
+    margin-top: 33rem;
+    padding: 2rem;
+  }
+
+  .container .container_head .imgbx {
+    height: 87%;
+    /* position: relative; */
+    width: 90%;
+    right: -5rem;
+    top: 6rem;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 10%) 0px 25px 40px;
+
+  }
+
+  .container .container_head .imgbx img {
+    object-fit: contain;
+    position: relative;
+    height: 500px;
+  }
+
+  #row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}

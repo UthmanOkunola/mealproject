@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="body text-white">
+            <i class="fa-solid fa-spinner fa-4x fa-spin"></i>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>MEAL DB</h2>
+        <h2>MENU</h2>
+    </div>
+
+    <div class="container container_details">
+        <div class="container_body" id="container_body">
+            <h1>Name of Meal</h1>
+            <p id="p">Ingredients</p>
+            <div class="bodylists" id="bodylists">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+            <div class="description" id="description">
+                <p class="p">Description</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, eum! Officia perferendis sunt fuga
+                    omnis libero debitis numquam eum! Voluptatum soluta sapiente assumenda iusto consequatur
+                    reprehenderit illum recusandae dicta et.</p>
+            </div>
+            <div class="bodybtns">
+                <button type="button" class="btn btn-success">Order Now</button>
+    <!-- Button trigger modal -->
+                <button type="button" id="How_its_made" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    How it's made
+                </button>
+            </div>
+        </div>
+
+        <div class="container_head">
+            <div class="imgbx" id="imgbx">
+                <img src="images/img1.jfif" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" style="width: 100%" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How it's made</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" id="iframe" height="409" src="https://www.youtube.com/embed/B0YX0yPX4Wo" title="Learn DOM Manipulation In 18 Minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+    <script src="js/details.js"></script>
+</body>
+
+</html>
